@@ -19,4 +19,13 @@ public class Mars {
             System.out.println("ERROR!!! Flight plan already set. Landing on the Plain");
         }
     }
+    public static boolean landingCheck(int minutesLeft) {
+        for (int minute = 0; minute <= minutesLeft; minute++) {
+            if (minute % 2 == 0 && minute % 3 == 0) {
+                System.out.println("Keep Center");
+            } else {
+                
+            }
+        }
+    }
 }
