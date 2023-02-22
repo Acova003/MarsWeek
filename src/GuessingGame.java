@@ -24,9 +24,9 @@ public class GuessingGame {
                 System.out.println("\nCongratulations! The magic number is: " + number);
                 System.out.println("You guessed it in " + tries + " tries");
                 break;
-            } else if (userGuess < number) {
+            } else if (userGuess < number && userGuess <= 100 && userGuess > 0 ) {
                 System.out.println("Too low");
-            } else if (userGuess > number) {
+            } else if (userGuess > number && userGuess <= 100 && userGuess > 0) {
                 System.out.println("Too high");
             } else {
                 System.out.println("Invalid entry. Please pick a number between 1 and 100");
