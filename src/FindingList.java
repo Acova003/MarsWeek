@@ -47,7 +47,7 @@ if (fossilChoice.equalsIgnoreCase("Bird")) {
 } else if (fossilChoice.equalsIgnoreCase("Fish")) {
     System.out.println("Fossil: " + fossilChoice + "\n" + fossilDirectory.get(fossilChoice));
 } else if (fossilChoice.equalsIgnoreCase("Tooth")) {
-    System.out.println("Fossil: " + fossilChoice + "\n" +fossilDirectory.get(fossilChoice));
+    System.out.println("Fossil: " + fossilChoice + "\n" + fossilDirectory.get(fossilChoice));
 }
     }
 }
