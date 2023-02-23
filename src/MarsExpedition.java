@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class MarsExpedition {
     public void marsExpedition (){
         Scanner input = new Scanner(System.in);
-        System.out.println("\n Expedition is starting...");
-        System.out.println("\n Systems engaged...");
-        System.out.println("\n We're off in...");
-        System.out.println("\n 3");
-        System.out.println("\n 2");
-        System.out.println("\n 1");
-        System.out.println("\n Blast off!");
+        System.out.println("\nExpedition is starting..." + 
+        "\nSystems engaged..." + 
+        "\nWe're off in..." + 
+        "\n3" +
+        "\n2" + 
+        "\n1" +
+        "\nBlast off!");
 
         System.out.println("\n What is your name?");
         String name = input.nextLine();
@@ -44,6 +44,33 @@ public class MarsExpedition {
         System.out.println("You are allowed to bring one snack with you. What do you want to bring?");
         String snackAnswer = input.nextLine();
         System.out.println("Nice choice, you will be bringing a" + snackAnswer + " with you.");
+
+        System.out.println("You have the choice of 3 vehicles" +
+        "\nA: A Space Bubble" +
+        "\nB: A Rocket 934" +
+        "\nC: A Ducati");
+        String vehicleChoice = input.nextLine();
+
+        if (vehicleChoice.equalsIgnoreCase("A")) {
+            vehicleChoice = "A Space Bubble";
+        } else if (vehicleChoice.equalsIgnoreCase("B")) {
+            vehicleChoice = "A Rocket 934";
+        } else if (vehicleChoice.equalsIgnoreCase("C")) {
+            vehicleChoice = "A Ducati";
+        } else {
+            vehicleChoice = "your feet";
+        }
+        System.out.println("Get ready to embark on your expedition!!!" +
+                "\nCaptain: " + name + " with " + teamSize + " teammates." +
+                "\nCruising through the universe with " + vehicleChoice + "." +
+                "\nSnaking on " + snackAnswer + "." +
+                "\nExploration starts in" +
+                "\n5...." +
+                "\n4...." +
+                "\n3...." +
+                "\n2...." +
+                "\n1...." +
+                "\nGO GO GO!");
     }
 }
 
