@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MarsExpedition {
-    public void marsExpedition (){
+    public MarsExpedition(){
         Scanner input = new Scanner(System.in);
         System.out.println("\nExpedition is starting..." + 
         "\nSystems engaged..." + 
