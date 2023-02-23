@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class FindingList {
@@ -49,5 +50,19 @@ if (fossilChoice.equalsIgnoreCase("Bird")) {
 } else if (fossilChoice.equalsIgnoreCase("Tooth")) {
     System.out.println("Fossil: " + fossilChoice + "\n" + fossilDirectory.get(fossilChoice));
 }
+Thread.sleep(700);
+HashSet<String> supplies = new HashSet<>();
+
+        supplies.add("Boom box");
+        supplies.add("Pillow");
+        supplies.add("Tylenol");
+
+        supplies.remove("Pillow");
+
+        Iterator itr = supplies.iterator();
+
+        while (itr.hasNext()) {
+            System.out.println(itr.next());
+        }
     }
 }

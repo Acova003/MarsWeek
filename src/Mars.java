@@ -2,6 +2,7 @@ public class Mars {
     public static void main(String[] args) {
         new GuessingGame();
         new MarsExpedition();
+        new FindingsList();
         String colonyName = "Sitges";
         int shipPopulation = 300;
         double meals = 4000.00;
