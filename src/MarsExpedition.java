@@ -39,7 +39,11 @@ public class MarsExpedition {
             teamSize = 2;
         } else if (teamSize == 2) {
             System.out.println("Great! That's the perfect amount of people.");
+        }
+
+        System.out.println("You are allowed to bring one snack with you. What do you want to bring?");
+        String snackAnswer = input.nextLine();
+        System.out.println("Nice choice, you will be bringing a" + snackAnswer + " with you.");
     }
-}
 }
 
